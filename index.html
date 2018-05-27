@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Crystal Collector : jQuery</title>
+        <link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Overlock:400,700"
+             rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+    </head>
+
+    <body>
+        <section>
+            <header>
+                <div class="title">
+                    <h1>Crystal Collector</h1>
+                </div>
+            </header>
+            <div class="random">Find the number:</div>
+            <div id="hidden">XXX</div>
+            <div class="gem-set">
+                <ul class="gem-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="score" id="wins">
+                    <h3>wins: X</h3>
+                </div>
+                <div class="total">
+                    <h3>score: X</h3>
+                    <button>Tutorial</button>
+                </div>
+                <div class="lose" id="losses">
+                    <h3 class="move">losses: X</h3>
+                </div>
+            </div>
+        </section>
+        <div class="tutorial">
+            <div class="first">
+                <p>At the start of each game a random number will appear</p>
+                <h6 id="explain-random">Next</h6>
+            </div>
+            <div class="second">
+                <p> At the start of the game, each crystal is also assigned a random number. 
+                    You must click the crystal to discover what number was assigned.</p>
+                <h6 id="explain-crystals">Next</h6>
+            </div>
+            <div class="third">
+                <p>Each time you click a crystal your score will increase by the amount
+                    assigned to that crystal. Click the crystal as many times as necessary
+                    to get your score to match the random number above.</p>
+                <h6 id="explain-score">Finish</h6>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script type='text/javascript' src='assets/javascript/game.js'></script>
+    </body>
+</html>
