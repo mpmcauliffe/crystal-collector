@@ -47,6 +47,16 @@ button {
     padding: .5rem 3rem;
     margin: 1rem 4rem;
 }
+h5 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: .3rem;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
 
 
 /*=======================================================================================*/
@@ -125,14 +135,14 @@ button:active {
     margin-top: 4rem;
     flex-wrap: wrap;
 }
-.score {
+.left {
     height: 13rem;
     width: 25rem;
     border: .1rem solid #c9c9c9;
     border-radius: 2rem;
     background: rgba(121, 121, 255, .5);
 }
-.total {
+.center {
     height: 13rem;
     width: 25rem;
     display: flex;
@@ -143,7 +153,7 @@ button:active {
     border-radius: 2rem;
     background: rgba(120, 255, 120, .5);
 }
-.lose {
+.right {
     height: 13rem;
     width: 25rem;
     border: .1rem solid #c9c9c9;
@@ -233,26 +243,26 @@ h6:hover{
 }
 
 @media screen and (max-width: 64rem) {
-    .total {
+    .center {
         flex-basis: 60%;
         order: 0;
     }
-    .score {
+    .left {
         height: 6rem;
         flex-basis: 60%;
         flex-wrap: wrap;
         order: 1;
     }
-    .lose {
+    .right {
         height: 6rem;
         flex-basis: 60%;
         flex-wrap: wrap;
         order: 2;
     }
-    .lose h3 {
+    .right h3 {
         margin-top: 1rem;
     }
-    .score h3 {
+    .left h3 {
         margin-top: 1rem;
     }
     .second {
