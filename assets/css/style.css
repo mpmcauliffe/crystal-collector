@@ -167,9 +167,7 @@ button:active {
 /* #662244 */
 /* rgb(222, 220, 255) */
 
-.tutorial {
-    display: none;
-}
+
 p {
     font-family: 'Overlock', cursive;
     font-size: 2rem;

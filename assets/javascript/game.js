@@ -86,8 +86,27 @@ $(document).ready(() => {
             console.log(result);
             checkScore();
         })
-        
 
+        $("button").on("click", tutorial);
+        
+        function tutorial() {
+            
+            $(".first").show();
+            $("#explain-random").on("click", () => {
+                $(".second").show();
+            })
+            $("#explain-crystals").on("click", () => {
+                $(".third").show();
+                $("#explain-score").on("click", hideTutorial);
+            })
+
+        }
+        
+        function hideTutorial() {
+            $(".first").hide();
+            $(".second").hide();
+            $(".third").hide();
+        }
 
         // let regulator = debounce(function () {
         //     //crystal();
@@ -112,6 +131,7 @@ $(document).ready(() => {
             starter: function() {
                 getColors();
                 showScores(0);
+                hideTutorial();
             }
         }
 
