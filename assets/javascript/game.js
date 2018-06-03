@@ -99,7 +99,6 @@ $(document).ready(() => {
                 $(".third").show();
                 $("#explain-score").on("click", hideTutorial);
             })
-
         }
         
         function hideTutorial() {
@@ -107,25 +106,6 @@ $(document).ready(() => {
             $(".second").hide();
             $(".third").hide();
         }
-
-        // let regulator = debounce(function () {
-        //     //crystal();
-        // }, 250)
-
-        // function debounce(func, wait, immediate) {
-        //     var timeout;
-        //     return function () {
-        //         var context = this, args = arguments;
-        //         var later = function () {
-        //             timeout = null;
-        //             if (!immediate) func.apply(context, args);
-        //         };
-        //         var callNow = immediate && !timeout;
-        //         clearTimeout(timeout);
-        //         timeout = setTimeout(later, wait);
-        //         if (callNow) func.apply(context, args);
-        //     };
-        // }
 
         return {
             starter: function() {
