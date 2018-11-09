@@ -79,7 +79,7 @@ $(document).ready(() => {
                 $(".message").hide();
             }, 900);
         }
-
+        //
         $("li").on("click", function() {
             let result = $("li").eq($("li").index(this)).val();
             scores.count += result;
